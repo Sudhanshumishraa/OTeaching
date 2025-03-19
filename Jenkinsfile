@@ -30,7 +30,7 @@ pipeline {
             steps {
                 script {
                     // Example for IIS deployment on a remote server
-                    sh 'scp -r publish user@your-server:/path/to/iis/site'
+                    bat 'scp -r publish user@your-server:/path/to/iis/site'
                 }
             }
         }
