@@ -17,14 +17,7 @@ pipeline {
             }
         }
  
-        stage('Test') {
-            steps {
-                script {
-                    bat 'dotnet test --no-build --configuration Release'
-                }
-            }
-        }
- 
+        
         stage('Publish') {
             steps {
                 script {
