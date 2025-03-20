@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Sudhanshumishraa/OTeaching.git'  // Replace with your repo URL
+                checkout scm  // Replace with your repo URL
             }
         }
  
