@@ -32,15 +32,6 @@ pipeline {
                 }
             }
         }
- 
-        stage('Deploy') {
-            steps {
-                script {
-                    // Example for IIS deployment on a remote server
-                    bat 'scp -r publish C:\ProgramData\Jenkins\.jenkins\workspace\Oteacting_build'
-                }
-            }
-        }
     }
 }
  
